@@ -181,4 +181,16 @@ REST_FRAMEWORK = {
     )
 }
 
+STATIC_ROOT = "static"
+
+# id: CSTT8X712gn5tbKrBeN9AT5d92nZ2hi6yY0N90ES
+# sec: 5uCoRaAiObp3xjeznggqAiQ7LRbGNggAo0J3uP0ufQf1InSuLtLKgWw8LaNVGZYyyNd0zZWTRlQIOR17dmSY1kmBlJg8vYSRLUUedyhQEKFPcvPdd1FTCj0zqMWRZ5t9
+# Bahis Serve
+# Id: MOkxIl8tFCO3ZitgrFLqlRvJ9EgoN7mcyUddPtJI
+# sec: gbjNip2Q4w5qNIPVbWTjMfN2ZpXYxYCGHS60l2uOmtPmwbyPxpStz4bQhkmZsdtGKChuIxKc5egOVXx3q2IHk6x5eLW0gEucD4Onq86LPzcXPzGpOJggl31ujUbixpuY
+# curl -X POST -d "grant_type=password&username=sharful&password=321" -u "MOkxIl8tFCO3ZitgrFLqlRvJ9EgoN7mcyUddPtJI:gbjNip2Q4w5qNIPVbWTjMfN2ZpXYxYCGHS60l2uOmtPmwbyPxpStz4bQhkmZsdtGKChuIxKc5egOVXx3q2IHk6x5eLW0gEucD4Onq86LPzcXPzGpOJggl31ujUbixpuY" http://localhost:8000/token/
+# Bahis desk
+# Id: L8Jnuho9AkCEBdpFQMMJsJBBb1Dqgt26EEzxCRWo
+# sec: Jfi4A4Kf4nqmlbGwaqSDDN3nDd1hePuRfgCcZKfIyojmmg8WN2wBcnvxcUZ56bFNOhyIG6HEP7UzzryjnTt6Gd5u6oEezn0OmLQRef0gyPm0eLSUzre7tvEImUSYAKib
+
 
