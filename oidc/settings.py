@@ -8,6 +8,12 @@ SECRET_KEY = 'django-insecure--yyujb9j%u97+x1_gz%p_4oizkw9@27xefc$49lp8w-l=dctgp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
+    'http://119.40.84.203:3000',
+    'http://bahis.dls.gov.bd'
+]
 
 # Application definition
 INSTALLED_APPS = [
@@ -89,15 +95,10 @@ STATIC_URL = 'static/'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# My Variable
 CORS_ORIGIN_ALLOW_ALL = True
 
 AUTH_USER_MODEL = 'users.User'
 LOGIN_URL = '/admin/login/'
-
-# with open('oidc.pub', 'rb') as PRIVATE_KEY:
-#     print(str(PRIVATE_KEY.read()))
-#     os.environ['OIDC_RSA_PRIVATE_KEY'] = str(PRIVATE_KEY.read())
 
 os.environ['OIDC_RSA_PRIVATE_KEY'] = '''-----BEGIN PRIVATE KEY-----
 MIIJQgIBADANBgkqhkiG9w0BAQEFAASCCSwwggkoAgEAAoICAQDQuLCDk6QF/8Ts
@@ -182,15 +183,3 @@ REST_FRAMEWORK = {
 }
 
 STATIC_ROOT = "static"
-
-# id: CSTT8X712gn5tbKrBeN9AT5d92nZ2hi6yY0N90ES
-# sec: 5uCoRaAiObp3xjeznggqAiQ7LRbGNggAo0J3uP0ufQf1InSuLtLKgWw8LaNVGZYyyNd0zZWTRlQIOR17dmSY1kmBlJg8vYSRLUUedyhQEKFPcvPdd1FTCj0zqMWRZ5t9
-# Bahis Serve
-# Id: MOkxIl8tFCO3ZitgrFLqlRvJ9EgoN7mcyUddPtJI
-# sec: gbjNip2Q4w5qNIPVbWTjMfN2ZpXYxYCGHS60l2uOmtPmwbyPxpStz4bQhkmZsdtGKChuIxKc5egOVXx3q2IHk6x5eLW0gEucD4Onq86LPzcXPzGpOJggl31ujUbixpuY
-# curl -X POST -d "grant_type=password&username=sharful&password=321" -u "MOkxIl8tFCO3ZitgrFLqlRvJ9EgoN7mcyUddPtJI:gbjNip2Q4w5qNIPVbWTjMfN2ZpXYxYCGHS60l2uOmtPmwbyPxpStz4bQhkmZsdtGKChuIxKc5egOVXx3q2IHk6x5eLW0gEucD4Onq86LPzcXPzGpOJggl31ujUbixpuY" http://localhost:8000/token/
-# Bahis desk
-# Id: L8Jnuho9AkCEBdpFQMMJsJBBb1Dqgt26EEzxCRWo
-# sec: Jfi4A4Kf4nqmlbGwaqSDDN3nDd1hePuRfgCcZKfIyojmmg8WN2wBcnvxcUZ56bFNOhyIG6HEP7UzzryjnTt6Gd5u6oEezn0OmLQRef0gyPm0eLSUzre7tvEImUSYAKib
-
-
