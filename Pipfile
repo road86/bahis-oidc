@@ -9,6 +9,8 @@ django-oauth-toolkit = "*"
 django-cors-headers = "*"
 djangorestframework = "*"
 gunicorn = "*"
+python-dotenv = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
